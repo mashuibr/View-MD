@@ -36,7 +36,9 @@ export function activate(context: vscode.ExtensionContext) {
       }
 
       const updatePreview = async () => {
-        if (!currentPanel) return;
+        if (!currentPanel) {
+          return;
+        }
 
         const text = editor.document.getText();
         const html = await getHTML(text);
