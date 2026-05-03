@@ -1,9 +1,9 @@
 {
   "name": "view-md",
-  "displayName": "view-md",
+  "displayName": "View MD",
   "description": "markdown previewer",
   "publisher": "mashuibr",
-  "version": "0.0.5",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.80.0"
   },
