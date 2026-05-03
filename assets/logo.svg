@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <!-- Matte minimal base -->
+  <rect width="256" height="256" fill="#0d0e12" rx="56"/> 
+
+  <!-- Abstract Eye / Lens -->
+  <path d="M 40 128 C 88 64, 168 64, 216 128 C 168 192, 88 192, 40 128 Z" fill="none" stroke="#2d313a" stroke-width="20" stroke-linejoin="round"/>
+
+  <!-- Sharp, geometric 'M' -->
+  <path d="M 92 160 V 96 L 128 132 L 164 96 V 160" fill="none" stroke="#ffffff" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- View / Focus Dot (Live Indicator) -->
+  <circle cx="128" cy="160" r="12" fill="#007acc" />
+</svg>
