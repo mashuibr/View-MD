@@ -3,18 +3,23 @@
   "displayName": "view-md",
   "description": "markdown previewer",
   "publisher": "mashuibr",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.80.0"
   },
-  "repository":{
+  "repository": {
     "type": "git",
     "url": "https://github.com/mashuibr/View-MD.git"
   },
   "categories": [
     "Other"
   ],
-  "keywords": ["markdown", "preview", "md", "viewer"],
+  "keywords": [
+    "markdown",
+    "preview",
+    "md",
+    "viewer"
+  ],
   "icon": "assets/logo.png",
   "activationEvents": [],
   "main": "./dist/extension.js",
