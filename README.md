@@ -1,71 +1,124 @@
-# view-md README
+# view-md
 
-This is the README for your extension "view-md". After writing up a brief description, we recommend including the following sections.
+`view-md` is a lightweight VS Code extension that opens a live Markdown preview in a side panel.
 
-## Features
+This project is currently pre-release and not yet published to the VS Code Marketplace. The GitHub repository is the main source of truth while development continues.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## What is view-md?
 
-For example if there is an image subfolder under your extension project workspace:
+`view-md` helps you preview Markdown quickly while writing. Instead of switching tabs, it opens a dedicated preview panel beside your editor and updates as you type.
 
-\!\[feature X\]\(images/feature-x.png\)
+It is built for speed and simplicity:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- No complex setup.
+- Fast open-and-preview workflow.
+- Real-time updates from your active Markdown file.
 
-## Requirements
+## Why it is good
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- **Focused workflow**: write and preview side-by-side.
+- **Live feedback**: instantly see how Markdown renders.
+- **Lightweight behavior**: reuses the existing preview panel instead of creating clutter.
+- **Useful base for future features**: simple architecture that is easy to extend.
 
-## Extension Settings
+## Current Features
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+- Adds the command **Open Markdown Preview** (`markdownPreviewer.open`).
+- Opens preview beside the current editor.
+- Updates preview automatically as you edit the active Markdown file.
+- Reuses an existing preview panel to avoid duplicate tabs.
 
-For example:
+## How to use it right now
 
-This extension contributes the following settings:
+1. Open a `.md` file in VS Code.
+2. Run **Open Markdown Preview** from the Command Palette.
+3. Edit your Markdown and watch the preview update in real time.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+If no editor is open, or if the active file is not Markdown, the extension shows a helpful error message.
 
-## Known Issues
+## Local development
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+### Prerequisites
+
+- Node.js 20+ (recommended)
+- npm
+- VS Code 1.116.0+
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Build once
+
+```bash
+npm run compile
+```
+
+### Watch mode
+
+```bash
+npm run watch
+```
+
+### Run tests
+
+```bash
+npm test
+```
+
+## Available Scripts
+
+- `npm run compile` - type-check, lint, and bundle extension code.
+- `npm run package` - production bundle for publishing.
+- `npm run watch` - run TypeScript and esbuild watchers in parallel.
+- `npm run lint` - run ESLint on `src`.
+- `npm run check-types` - run TypeScript type checks.
+- `npm test` - run extension test suite.
+
+## Contribution Guide
+
+Contributions are welcome.
+
+How others can contribute:
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Make changes with clear commit messages.
+4. Run checks locally:
+
+```bash
+npm run compile
+npm test
+```
+
+5. Open a Pull Request with:
+
+- What changed
+- Why it changed
+- Any screenshots or preview notes (if UI output changed)
+
+Contribution ideas:
+
+- More Markdown rendering options.
+- Better theming and typography controls.
+- Extension settings for custom behavior.
+- Performance and test coverage improvements.
+
+## Known Limitations
+
+- This extension currently applies its own preview styles (dark theme-like appearance).
+- It does not yet expose user-configurable extension settings.
+
+## Credits
+
+- Project created and maintained by the `view-md` author.
+- Built with the VS Code Extension API and the `marked` Markdown parser.
+- Thanks to early users, testers, and contributors who help improve the extension.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.1
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial version with live side-by-side Markdown preview.
