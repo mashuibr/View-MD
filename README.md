@@ -1,124 +1,140 @@
-# view-md
+# View MD
 
-`view-md` is a lightweight VS Code extension that opens a live Markdown preview in a side panel.
+![View MD Logo](assets/logo.png)
 
-This project is currently pre-release and not yet published to the VS Code Marketplace. The GitHub repository is the main source of truth while development continues.
+A lightweight live Markdown preview extension for Visual Studio Code.
 
-## What is view-md?
+View MD provides a fast and minimal Markdown preview experience with real-time rendering and smooth synchronized scrolling.
 
-`view-md` helps you preview Markdown quickly while writing. Instead of switching tabs, it opens a dedicated preview panel beside your editor and updates as you type.
+---
 
-It is built for speed and simplicity:
+## Features
 
-- No complex setup.
-- Fast open-and-preview workflow.
-- Real-time updates from your active Markdown file.
+- Live Markdown preview
+- Smooth scroll synchronization
+- Real-time preview updates
+- Lightweight and fast
+- Minimal and distraction-free interface
 
-## Why it is good
+---
 
-- **Focused workflow**: write and preview side-by-side.
-- **Live feedback**: instantly see how Markdown renders.
-- **Lightweight behavior**: reuses the existing preview panel instead of creating clutter.
-- **Useful base for future features**: simple architecture that is easy to extend.
+## Installation
 
-## Current Features
+### From Visual Studio Code Marketplace
 
-- Adds the command **Open Markdown Preview** (`markdownPreviewer.open`).
-- Opens preview beside the current editor.
-- Updates preview automatically as you edit the active Markdown file.
-- Reuses an existing preview panel to avoid duplicate tabs.
+1. Open Visual Studio Code
+2. Open the Extensions panel (`Ctrl + Shift + X`)
+3. Search for:
 
-## How to use it right now
+```text
+View MD
+```
 
-1. Open a `.md` file in VS Code.
-2. Run **Open Markdown Preview** from the Command Palette.
-3. Edit your Markdown and watch the preview update in real time.
+4. Click Install
 
-If no editor is open, or if the active file is not Markdown, the extension shows a helpful error message.
+---
 
-## Local development
+## Usage
 
-### Prerequisites
+1. Open any `.md` file
+2. Open the Command Palette:
 
-- Node.js 20+ (recommended)
-- npm
-- VS Code 1.116.0+
+```text
+Ctrl + Shift + P
+```
 
-### Install dependencies
+3. Run:
+
+```text
+Open Markdown Preview
+```
+
+---
+
+## Preview
+
+> Add screenshots or GIF previews here later.
+
+Example:
+
+```text
+assets/demo.gif
+```
+
+---
+
+## Development Setup
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/mashuibr/View-MD.git
+cd View-MD
+```
+
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Build once
-
-```bash
-npm run compile
-```
-
-### Watch mode
+### Start Development Mode
 
 ```bash
 npm run watch
 ```
 
-### Run tests
+### Build the Extension
 
 ```bash
-npm test
+npm run package
 ```
 
-## Available Scripts
-
-- `npm run compile` - type-check, lint, and bundle extension code.
-- `npm run package` - production bundle for publishing.
-- `npm run watch` - run TypeScript and esbuild watchers in parallel.
-- `npm run lint` - run ESLint on `src`.
-- `npm run check-types` - run TypeScript type checks.
-- `npm test` - run extension test suite.
-
-## Contribution Guide
-
-Contributions are welcome.
-
-How others can contribute:
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Make changes with clear commit messages.
-4. Run checks locally:
+### Create a VSIX Package
 
 ```bash
-npm run compile
-npm test
+vsce package
 ```
 
-5. Open a Pull Request with:
+---
 
-- What changed
-- Why it changed
-- Any screenshots or preview notes (if UI output changed)
+## Roadmap
 
-Contribution ideas:
+Planned improvements:
 
-- More Markdown rendering options.
-- Better theming and typography controls.
-- Extension settings for custom behavior.
-- Performance and test coverage improvements.
+- Better scroll interpolation
+- Theme-aware preview
+- Improved synchronization
+- Keyboard navigation improvements
+- Enhanced Markdown rendering support
 
-## Known Limitations
+---
 
-- This extension currently applies its own preview styles (dark theme-like appearance).
-- It does not yet expose user-configurable extension settings.
+## Contributing
 
-## Credits
+This project is currently maintained by a single developer, but contributions, suggestions, bug reports, and pull requests are welcome.
 
-- Project created and maintained by the `view-md` author.
-- Built with the VS Code Extension API and the `marked` Markdown parser.
-- Thanks to early users, testers, and contributors who help improve the extension.
+If you'd like to contribute:
 
-## Release Notes
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Commit your updates
+5. Open a Pull Request
 
-### 0.0.1
+---
 
-Initial version with live side-by-side Markdown preview.
+## License
+
+This project is licensed under the MIT License.
+
+See the `LICENSE` file for details.
+
+---
+
+## Repository
+
+```text
+https://github.com/mashuibr
+
+```
