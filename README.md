@@ -1,124 +1,76 @@
-# view-md
+# View MD - Markdown Previewer
 
-`view-md` is a lightweight VS Code extension that opens a live Markdown preview in a side panel.
+![View MD Logo](assets/logo.png)
 
-This project is currently pre-release and not yet published to the VS Code Marketplace. The GitHub repository is the main source of truth while development continues.
+A simple and efficient Markdown previewer extension for Visual Studio Code. This extension provides a live preview for your Markdown files in a separate view, with scroll synchronization to keep your editor and preview aligned.
 
-## What is view-md?
+## Features
 
-`view-md` helps you preview Markdown quickly while writing. Instead of switching tabs, it opens a dedicated preview panel beside your editor and updates as you type.
+- **Live Preview**: See your Markdown changes rendered in real-time.
+- **Scroll Sync**: The preview scrolls as you scroll through your Markdown file.
+- **Simple and Lightweight**: No unnecessary features, just a fast and reliable preview.
+- **Side-by-Side View**: The preview opens in a column next to your active editor.
 
-It is built for speed and simplicity:
+## Usage
 
-- No complex setup.
-- Fast open-and-preview workflow.
-- Real-time updates from your active Markdown file.
+1.  Open a Markdown file (`.md`).
+2.  Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac).
+3.  Run the command: `Open Markdown Preview`.
 
-## Why it is good
+A new panel will open to the side with the rendered HTML of your Markdown file. The preview will automatically update as you edit the file.
 
-- **Focused workflow**: write and preview side-by-side.
-- **Live feedback**: instantly see how Markdown renders.
-- **Lightweight behavior**: reuses the existing preview panel instead of creating clutter.
-- **Useful base for future features**: simple architecture that is easy to extend.
+## Commands
 
-## Current Features
+- `Open Markdown Preview`: Opens the Markdown preview for the active Markdown file.
 
-- Adds the command **Open Markdown Preview** (`markdownPreviewer.open`).
-- Opens preview beside the current editor.
-- Updates preview automatically as you edit the active Markdown file.
-- Reuses an existing preview panel to avoid duplicate tabs.
+## Installation
 
-## How to use it right now
+You can install this extension from the Visual Studio Code Marketplace.
 
-1. Open a `.md` file in VS Code.
-2. Run **Open Markdown Preview** from the Command Palette.
-3. Edit your Markdown and watch the preview update in real time.
+1.  Open the Extensions view in VS Code (`Ctrl+Shift+X`).
+2.  Search for "View MD".
+3.  Click "Install".
 
-If no editor is open, or if the active file is not Markdown, the extension shows a helpful error message.
+## Development
 
-## Local development
+To get started with development:
 
-### Prerequisites
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/mashuibr/View-MD.git
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+3.  Start the development watch task:
+    ```bash
+    npm run watch
+    ```
+4.  Press `F5` to open a new VS Code window with the extension loaded for debugging.
 
-- Node.js 20+ (recommended)
-- npm
-- VS Code 1.116.0+
+### Build
 
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Build once
-
-```bash
-npm run compile
-```
-
-### Watch mode
+To create a production-ready package, run:
 
 ```bash
-npm run watch
+npm run package
 ```
 
-### Run tests
+This will create a `.vsix` file that can be installed in VS Code.
 
-```bash
-npm test
-```
+### Tests
 
-## Available Scripts
+To run the tests:
 
-- `npm run compile` - type-check, lint, and bundle extension code.
-- `npm run package` - production bundle for publishing.
-- `npm run watch` - run TypeScript and esbuild watchers in parallel.
-- `npm run lint` - run ESLint on `src`.
-- `npm run check-types` - run TypeScript type checks.
-- `npm test` - run extension test suite.
+1.  Make sure the watch task is running (`npm run watch`).
+2.  Open the Testing view in the Activity Bar.
+3.  Click the "Run Tests" button.
 
-## Contribution Guide
+## Contributing
 
-Contributions are welcome.
+Contributions are welcome! Please feel free to open an issue or submit a pull request.
 
-How others can contribute:
+## License
 
-1. Fork the repository.
-2. Create a feature branch.
-3. Make changes with clear commit messages.
-4. Run checks locally:
-
-```bash
-npm run compile
-npm test
-```
-
-5. Open a Pull Request with:
-
-- What changed
-- Why it changed
-- Any screenshots or preview notes (if UI output changed)
-
-Contribution ideas:
-
-- More Markdown rendering options.
-- Better theming and typography controls.
-- Extension settings for custom behavior.
-- Performance and test coverage improvements.
-
-## Known Limitations
-
-- This extension currently applies its own preview styles (dark theme-like appearance).
-- It does not yet expose user-configurable extension settings.
-
-## Credits
-
-- Project created and maintained by the `view-md` author.
-- Built with the VS Code Extension API and the `marked` Markdown parser.
-- Thanks to early users, testers, and contributors who help improve the extension.
-
-## Release Notes
-
-### 0.0.1
-
-Initial version with live side-by-side Markdown preview.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
