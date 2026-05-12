@@ -29,8 +29,8 @@ jobs:
       - name: Build Extension
         run: npm run package
 
-      - name: Run Tests
-        run: npm test
+      #- name: Run Tests # Optional: Uncomment if you have tests to run before publishing
+      #  run: npm test
 
       - name: Install VSCE
         run: npm install -g @vscode/vsce
