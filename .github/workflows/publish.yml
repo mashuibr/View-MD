@@ -2,12 +2,16 @@ name: Publish VS Code Extension
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - "v*"
 
 jobs:
   publish-extension:
     runs-on: ubuntu-latest
+
+    concurrency:
+      group: publish-extension
+      cancel-in-progress: true
 
     steps:
       - name: Checkout Repository
@@ -17,15 +21,21 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Extension
         run: npm run package
+
+      - name: Run Tests
+        run: npm test
 
       - name: Install VSCE
         run: npm install -g @vscode/vsce
 
       - name: Publish Extension
-        run: vsce publish -p ${{ secrets.VSCE_PAT }}
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: vsce publish --pat $VSCE_PAT
