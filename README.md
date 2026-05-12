@@ -1,140 +1,149 @@
 # View MD
 
-![View MD Logo](assets/logo.png)
+A modern and lightweight Markdown preview extension for Visual Studio Code designed to make writing and reading Markdown smoother, cleaner, and more intuitive.
 
-A lightweight live Markdown preview extension for Visual Studio Code.
+View MD provides a real-time preview experience with smooth synchronized scrolling, helping you stay focused while writing documentation, notes, READMEs, blogs, or project files directly inside VS Code.
 
-View MD provides a fast and minimal Markdown preview experience with real-time rendering and smooth synchronized scrolling.
-
----
-
-## Features
-
-- Live Markdown preview
-- Smooth scroll synchronization
-- Real-time preview updates
-- Lightweight and fast
-- Minimal and distraction-free interface
+Built for developers, students, writers, and markdown-heavy workflows.
 
 ---
 
-## Installation
+# ✨ Features
 
-### From Visual Studio Code Marketplace
+## 🔄 Real-Time Markdown Preview
 
-1. Open Visual Studio Code
-2. Open the Extensions panel (`Ctrl + Shift + X`)
-3. Search for:
+Instantly preview your Markdown files as you type with live updates and responsive rendering.
 
-```text
-View MD
-```
-
-4. Click Install
+No refreshing. No interruptions.
 
 ---
 
-## Usage
+## 📜 Smooth Scroll Synchronization
+
+View MD keeps your editor and preview perfectly synced while scrolling, creating a more natural writing and reading experience.
+
+Navigate large Markdown files effortlessly without losing your place.
+
+---
+
+## ⚡ Lightweight & Fast
+
+Designed to stay fast and responsive without unnecessary overhead.
+
+Minimal UI.
+Minimal distractions.
+Maximum focus.
+
+---
+
+## 🎯 Clean Reading Experience
+
+A distraction-free interface that makes Markdown content easier to read and review directly inside VS Code.
+
+Perfect for:
+
+- README writing
+- Documentation
+- Notes
+- Blogs
+- Project planning
+- Technical writing
+
+---
+
+## 🧩 Seamless VS Code Integration
+
+Works directly inside Visual Studio Code using the native extension workflow and command palette integration.
+
+---
+
+# 🚀 Getting Started
+
+## Open the Preview
 
 1. Open any `.md` file
 2. Open the Command Palette:
 
-```text
+```bash
 Ctrl + Shift + P
 ```
 
-3. Run:
-
-```text
-Open Markdown Preview
-```
-
----
-
-## Preview
-
-> Add screenshots or GIF previews here later.
-
-Example:
-
-```text
-assets/demo.gif
-```
-
----
-
-## Development Setup
-
-### Clone the Repository
+3. Search for:
 
 ```bash
-git clone https://github.com/mashuibr/View-MD.git
-cd View-MD
+View MD: Open Preview
 ```
 
-### Install Dependencies
-
-```bash
-npm install
-```
-
-### Start Development Mode
-
-```bash
-npm run watch
-```
-
-### Build the Extension
-
-```bash
-npm run package
-```
-
-### Create a VSIX Package
-
-```bash
-vsce package
-```
+4. Start writing and previewing instantly.
 
 ---
 
-## Roadmap
+# 📦 Installation
 
-Planned improvements:
+Install directly from the VS Code Marketplace.
 
-- Better scroll interpolation
-- Theme-aware preview
-- Improved synchronization
-- Keyboard navigation improvements
-- Enhanced Markdown rendering support
+### From VS Code
 
----
+1. Open Extensions
+2. Search for:
 
-## Contributing
-
-This project is currently maintained by a single developer, but contributions, suggestions, bug reports, and pull requests are welcome.
-
-If you'd like to contribute:
-
-1. Fork the repository
-2. Create a new branch
-3. Make your changes
-4. Commit your updates
-5. Open a Pull Request
-
----
-
-## License
-
-This project is licensed under the MIT License.
-
-See the `LICENSE` file for details.
-
----
-
-## Repository
-
-```text
-https://github.com/mashuibr
-
+```bash
+View MD
 ```
+
+3. Click Install
+
+---
+
+# 🛠 Built With
+
+- TypeScript
+- VS Code Extension API
+- HTML
+- CSS
+- JavaScript
+
+---
+
+# 💡 Why View MD?
+
+Markdown is one of the most commonly used formats for developers and creators, yet many preview tools feel disconnected or clunky.
+
+View MD was created to provide:
+
+- smoother navigation
+- better readability
+- cleaner previews
+- a more comfortable markdown workflow
+
+The goal is simple:
+
+Make Markdown feel better inside VS Code.
+
+---
+
+# 🔮 Upcoming Features
+
+Planned improvements and future updates include:
+
+- Better theme integration
+- Enhanced rendering support
+- Export options
+- Custom preview styling
+- Keyboard shortcuts
+- Performance improvements
+- More advanced synchronization
+
+---
+
+# 🤝 Feedback & Contributions
+
+Feedback, suggestions, and contributions are always welcome.
+
+If you encounter bugs or have feature ideas, feel free to open an issue or contribute to the project.
+
+---
+
+# 📄 License
+
+MIT License
